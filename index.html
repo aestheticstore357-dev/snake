@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#06142b" />
+  <title>Nokia Snake — Muhammad Shazin C</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="game-shell" aria-label="Nokia Snake Game">
+      <div class="top-brand">
+        <div class="brand">SNAKE</div>
+        <div class="creator">CREATED BY MUHAMMAD SHAZIN C</div>
+        <div class="contact">CONTACT: 9400701146</div>
+      </div>
+
+      <div class="screen-frame">
+        <div class="screen">
+          <canvas id="gameCanvas"></canvas>
+
+          <div id="startOverlay" class="overlay">
+            <div class="nokia-mark">NOKIA STYLE</div>
+            <h1>SNAKE</h1>
+            <p>CLASSIC ARCADE</p>
+            <button id="startBtn">START GAME</button>
+            <div class="hint">Use Arrow Keys / Swipe / Buttons</div>
+          </div>
+
+          <div id="gameOverOverlay" class="overlay hidden">
+            <div class="nokia-mark">GAME OVER</div>
+            <h2>YOUR SNAKE<br>HIT ITS TAIL</h2>
+            <div class="final-score">SCORE: <span id="finalScore">0</span></div>
+            <button id="restartBtn">PLAY AGAIN</button>
+          </div>
+
+          <div class="hud">
+            <span>SCORE <b id="score">0</b></span>
+            <span>BEST <b id="best">0</b></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="control up" data-dir="up" aria-label="Up">▲</button>
+        <button class="control left" data-dir="left" aria-label="Left">◀</button>
+        <button class="control center" id="pauseBtn" aria-label="Pause">Ⅱ</button>
+        <button class="control right" data-dir="right" aria-label="Right">▶</button>
+        <button class="control down" data-dir="down" aria-label="Down">▼</button>
+      </div>
+
+      <div class="footer">CLASSIC NOKIA-INSPIRED SNAKE • WRAP-AROUND SCREEN</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
